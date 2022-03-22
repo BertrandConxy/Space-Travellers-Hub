@@ -1,4 +1,4 @@
-![](https://img.shields.io/badge/Microverse-blueviolet)
+![](https://img.shields.io/badge/Space-travelers-blueviolet)
 
 # Space-Travellers-Hub
 
