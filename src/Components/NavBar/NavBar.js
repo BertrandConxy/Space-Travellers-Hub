@@ -8,22 +8,27 @@ const NavBar = () => {
     {
       id: 1,
       path: '/',
-      text: 'Rockets',
+      text: 'Home',
     },
     {
       id: 2,
-      path: '/dragon',
-      text: 'Dragon',
+      path: '/rockets',
+      text: 'Rockets',
     },
     {
       id: 3,
+      path: '/dragons',
+      text: 'Dragons',
+    },
+    {
+      id: 4,
       path: '/missions',
       text: 'Missions',
     },
     {
-      id: 4,
-      path: '/profile',
-      text: 'My Profile',
+      id: 5,
+      path: '/summary',
+      text: 'Summary',
     },
   ];
   return (
