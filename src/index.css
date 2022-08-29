@@ -1,14 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
 
-.active {
-  text-decoration: underline;
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  /* * Defines what 1rem is */
+  font-size: 62.5%;
 }
 
 body {
+  box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
 
-.missions-header {
+
+/* .active {
+  text-decoration: underline;
+} */
+
+/* .missions-header {
   border-bottom: 1px solid #ddd;
   padding-left: 10px;
 }
@@ -23,4 +38,4 @@ body {
   list-style-type: none;
   padding-left: 10px;
   font-size: 18px;
-}
+} */

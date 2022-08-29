@@ -3,6 +3,7 @@ header {
   justify-content: space-between;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   border-bottom: 1px solid rgb(146, 146, 146);
+  background-color: transparent;
 }
 
 .header-container {
