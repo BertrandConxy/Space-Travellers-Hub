@@ -1,4 +1,28 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+@font-face {
+  font-family: "Voyager-Bold";
+  src: url("./assets/fonts/Voyager-light.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Voyager-Regular";
+  src: url("./assets/fonts/Voyager-heavy.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Polaris";
+  src:
+    url("./assets/fonts/Polaris.woff2") format("woff2"),
+    url("./assets/fonts/Polaris.otf") format("otf");
+}
+
+:root {
+  --color-bg-main: #1b1f31;
+  --color-bg-secondary: #1d1d1d;
+  --color-primary: #4e2ecf;
+  --color-secondary: #6fcf97;
+  --font-color-1: #fff;
+  --font-color-2: #8b8b8b;
+}
 
 *,
 *::after,
@@ -15,9 +39,28 @@ html {
 
 body {
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+  font-family: "Voyager-Regular", sans-serif;
+  color: var(--font-color-1);
 }
 
+.u-mt-small {
+  margin-top: 2rem;
+}
+
+.u-heading {
+  background-image:
+    linear-gradient(
+      to bottom,
+      var(--font-color-1),
+      var(--font-color-2)
+    );
+  color: transparent;
+  -webkit-background-clip: text;
+  text-shadow: 0.09rem -0.09rem 0.8rem var(--font-color-1);
+  text-align: center;
+  font-size: 1.5rem;
+}
 
 /* .active {
   text-decoration: underline;

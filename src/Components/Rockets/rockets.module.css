@@ -6,11 +6,6 @@
   box-sizing: border-box;
 }
 
-body {
-  font-weight: 400;
-  font-family: 'Poppins', sans-serif;
-}
-
 .rocket-card {
   display: flex;
   width: 96%;

@@ -35,9 +35,8 @@ const NavBar = () => {
     <header>
       <div className={styles['header-container']}>
         <div className={styles['logo-container']}>
-          <NavLink to="/"><img src={logo} className={styles.logo} alt="" /></NavLink>
+          <NavLink to="/"><img src={logo} className={styles.logo} alt="STH logo" /></NavLink>
         </div>
-        <h1>Space Traveler&lsquo;s Hub</h1>
       </div>
       <nav>
         <ul>
