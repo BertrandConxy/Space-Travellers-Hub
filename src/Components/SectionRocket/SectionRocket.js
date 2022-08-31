@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import styles from './sectionRocket.module.css';
 import spaceX from '../../assets/spacex.jpg';
 import satellite from '../../assets/satellite.jpg';
@@ -19,6 +20,7 @@ const SectionRocket = () => (
           of space, the world outside our world.Tours for large group of people
           is made by using modern Rockets.
         </p>
+        <Link to="/rockets" className="btn btn-1">See All Rockets &rarr;</Link>
       </div>
       <div className={styles['rocket-section__images']}>
         <div className={styles['section-gallery']}>

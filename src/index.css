@@ -62,6 +62,19 @@ body {
   font-size: 1.5rem;
 }
 
+.btn, .btn:link, .btn:visited {
+  text-decoration: none;
+  padding: 1.5rem 3rem;
+  display: inline-block;
+  position: relative;
+  color: var(--font-color-2);
+}
+
+.btn-1 {
+  margin: 3rem 0;
+  border-radius: 2rem;
+}
+
 /* .active {
   text-decoration: underline;
 } */
