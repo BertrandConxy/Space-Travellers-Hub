@@ -10,7 +10,8 @@
 
 @font-face {
   font-family: "Polaris";
-  src: url("./assets/fonts/Polaris.woff2") format("woff2"),
+  src:
+    url("./assets/fonts/Polaris.woff2") format("woff2"),
     url("./assets/fonts/Polaris.otf") format("otf");
 }
 
@@ -49,11 +50,12 @@ body {
 }
 
 .u-heading {
-  background-image: linear-gradient(
-    to bottom,
-    var(--font-color-1),
-    var(--font-color-2)
-  );
+  background-image:
+    linear-gradient(
+      to bottom,
+      var(--font-color-1),
+      var(--font-color-2)
+    );
   color: transparent;
   -webkit-background-clip: text;
   text-shadow: 0.09rem -0.09rem 0.8rem var(--font-color-1);
@@ -92,7 +94,7 @@ body {
   color: var(--font-color-1);
   text-shadow: 0.05rem 0.05rem 1rem var(--font-color-1);
   border-color: var(--font-color-1);
-  box-shadow: 0rem 0rem 1rem var(--font-color-1);
+  box-shadow: 0 0 1rem var(--font-color-1);
 }
 
 /* .active {

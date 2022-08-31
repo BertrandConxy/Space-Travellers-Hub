@@ -1,6 +1,6 @@
 .mission-section {
   background-color: var(--color-bg-main);
-  transform: translateY(-5.3rem);
+  transform: translateY(-1.5rem);
   padding: 5rem 2.5rem;
   height: 90vh;
 }
@@ -18,4 +18,3 @@
   line-height: 2rem;
   margin: 2rem 0 3rem 0;
 }
-
