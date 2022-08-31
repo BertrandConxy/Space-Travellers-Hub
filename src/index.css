@@ -42,6 +42,7 @@ body {
   scroll-behavior: smooth;
   font-family: "Voyager-Regular", sans-serif;
   color: var(--font-color-1);
+  font-size: 1.4rem;
 }
 
 .u-mt-small {
@@ -60,6 +61,40 @@ body {
   text-shadow: 0.09rem -0.09rem 0.8rem var(--font-color-1);
   text-align: center;
   font-size: 1.5rem;
+}
+
+.btn,
+.btn:link,
+.btn:visited {
+  text-decoration: none;
+  padding: 1.5rem 3rem;
+  display: inline-block;
+  position: relative;
+  color: var(--font-color-2);
+}
+
+.btn-1 {
+  margin: 3rem 0;
+  border-radius: 2rem;
+  border: 1px solid var(--font-color-2);
+  box-shadow: 0.1rem 0.1rem 1.4rem var(--font-color-2);
+  transition: all 0.2s;
+}
+
+.btn-1:hover {
+  transform: translateY(-0.4rem) scale(1.03);
+  color: var(--font-color-1);
+  text-shadow: 0.1rem 0.1rem 1.4rem var(--font-color-1);
+  border-color: var(--font-color-1);
+  box-shadow: 0.1rem 0.1rem 1.6rem var(--font-color-1);
+}
+
+.btn-1:active {
+  transform: translateY(0) scale(1);
+  color: var(--font-color-1);
+  text-shadow: 0.05rem 0.05rem 1rem var(--font-color-1);
+  border-color: var(--font-color-1);
+  box-shadow: 0 0 1rem var(--font-color-1);
 }
 
 /* .active {

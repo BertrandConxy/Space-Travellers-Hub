@@ -1,0 +1,44 @@
+.footer {
+  padding: 3rem 1rem;
+  position: absolute;
+  width: 100%;
+}
+
+.company {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.company__sponsors > span {
+  font-family: "Polaris", sans-serif;
+  font-size: 3.5rem;
+  background-image:
+    linear-gradient(
+      to bottom,
+      var(--font-color-1),
+      var(--font-color-2)
+    );
+  color: transparent;
+  -webkit-background-clip: text;
+  text-shadow: 0.1rem -0.1rem 1rem var(--font-color-1);
+  padding: 0 1rem;
+  letter-spacing: -1px;
+}
+
+.company__address {
+  max-width: 40%;
+}
+
+.company__address--content > span {
+  display: block;
+  margin: 1rem 0;
+}
+
+.copyright {
+  position: absolute;
+  bottom: 0;
+  padding: 1rem 0;
+  left: 50%;
+  transform: translateX(-50%);
+}

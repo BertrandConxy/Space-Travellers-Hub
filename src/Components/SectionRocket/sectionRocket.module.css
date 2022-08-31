@@ -1,6 +1,6 @@
 .rocket-section {
-  background-color: #1b1f31;
-  transform: translateY(-5.1rem);
+  background-color: var(--color-bg-main);
+  transform: translateY(-1rem);
   padding: 5rem 2.5rem;
   height: 100vh;
 }
@@ -16,7 +16,6 @@
 
 .rocket-section__text {
   max-width: 50%;
-  font-size: 1.4rem;
   line-height: 2rem;
 }
 
