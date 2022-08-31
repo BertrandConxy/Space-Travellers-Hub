@@ -1,0 +1,21 @@
+.mission-section {
+  background-color: var(--color-bg-main);
+  transform: translateY(-5.3rem);
+  padding: 5rem 2.5rem;
+  height: 90vh;
+}
+
+.content {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 70%;
+  margin: 4rem auto;
+}
+
+.content__paragraph {
+  line-height: 2rem;
+  margin: 2rem 0 3rem 0;
+}
+
