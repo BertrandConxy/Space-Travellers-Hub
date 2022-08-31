@@ -1,5 +1,4 @@
 import React from 'react';
-import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import styles from './sectionRocket.module.css';
 import spaceX from '../../assets/spacex.jpg';
@@ -7,7 +6,7 @@ import satellite from '../../assets/satellite.jpg';
 import spaceShuttle from '../../assets/space-shuttle.jpg';
 
 const SectionRocket = () => (
-  <motion.section initial={{ opacity: 0.5 }} whileInView={{ opacity: 1 }} viewport={{ once: true }} transition={{ duration: 0.7 }} className={styles['rocket-section']}>
+  <section className={styles['rocket-section']}>
     <div className="u-heading">
       <h2>Travel tours by Rockets</h2>
     </div>
@@ -43,7 +42,7 @@ const SectionRocket = () => (
         </div>
       </div>
     </div>
-  </motion.section>
+  </section>
 );
 
 export default SectionRocket;
