@@ -28,11 +28,12 @@
 }
 
 .icon {
-  position: absolute;
+  position: fixed;
   font-size: 3.5rem;
   right: 2rem;
   top: 2rem;
   cursor: pointer;
+  color: green;
 }
 
 .logo-container {

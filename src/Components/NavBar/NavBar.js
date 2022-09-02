@@ -14,6 +14,7 @@ const NavBar = () => {
       setOffsetY(window.scrollY);
     };
     const animation = useAnimation();
+    const menuAnimation = useAnimation();
     useEffect(() => {
       window.addEventListener("scroll", handleScroll);
      if (offsetY > 0) {
@@ -21,6 +22,15 @@ const NavBar = () => {
           x: '-100vw',
           transition: {
             type: 'spring',
+            duration: 0.7,
+          },
+        });
+
+        menuAnimation.start({
+          x: 0,
+          transition: {
+            type: 'spring',
+            stiffness: 100,
             duration: 0.7,
           },
         });
@@ -32,6 +42,14 @@ const NavBar = () => {
           transition: {
             type: 'spring',
             stiffness: 100,
+            duration: 0.7,
+        },
+      });
+
+        menuAnimation.start({
+          x: '-100vw',
+          transition: {
+            type: 'spring',
             duration: 0.7,
         },
       });
@@ -78,7 +96,7 @@ const NavBar = () => {
       </div>
       <nav className={styles['nav-container']}>
         
-          { isOpen ? <AiOutlineClose className={styles.icon} /> : <GiHamburgerMenu className={styles.icon}/> }
+          { isOpen ? <AiOutlineClose className={styles.icon} /> : <motion.GiHamburgerMenu animate={menuAnimation} className={styles.icon}/> }
         
         <ul className={ isOpen ? `${styles['nav-column']} ${styles['nav-list']}` : styles['nav-list']}>
           {Links.map((link) => (
