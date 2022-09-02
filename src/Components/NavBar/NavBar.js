@@ -9,7 +9,7 @@ import styles from './navBar.module.css';
 
 const NavBar = () => {
   const [offsetY, setOffsetY] = useState(0);
-  const [isOpen, setOpen] = useState(true);
+  const [isOpen, setOpen] = useState(false);
     const handleScroll = () => {
       setOffsetY(window.scrollY);
     };
@@ -19,19 +19,20 @@ const NavBar = () => {
       window.addEventListener("scroll", handleScroll);
      if (offsetY > 0) {
         animation.start({
-          x: '-100vw',
+          x: '30vw',
           transition: {
             type: 'spring',
-            duration: 0.7,
+            duration: 0.4,
           },
         });
 
         menuAnimation.start({
           x: 0,
+          position: 'fixed',
           transition: {
             type: 'spring',
             stiffness: 100,
-            duration: 0.7,
+            duration: 0.4,
           },
         });
       }
@@ -42,15 +43,15 @@ const NavBar = () => {
           transition: {
             type: 'spring',
             stiffness: 100,
-            duration: 0.7,
+            duration: 0.4,
         },
       });
 
         menuAnimation.start({
-          x: '-100vw',
+          x: '30vw',
           transition: {
             type: 'spring',
-            duration: 0.7,
+            duration: 0.4,
         },
       });
     }
@@ -88,25 +89,55 @@ const NavBar = () => {
     },
   ];
   return (
-    <motion.header animate={animation} className={ isOpen ? `${styles.open} ${styles.header}` : styles.header}>
-      <div className={styles['logo-container']}>
-        <div className={styles['logo-container__icon']}>
-          <NavLink to="/"><img src={logo} className={styles.logo} alt="STH logo" /></NavLink>
+    <header
+      className={isOpen ? `${styles.open} ${styles.header}` : styles.header}
+    >
+      <div className={styles["logo-container"]}>
+        <div className={styles["logo-container__icon"]}>
+          <NavLink to="/">
+            <img src={logo} className={styles.logo} alt="STH logo" />
+          </NavLink>
         </div>
       </div>
-      <nav className={styles['nav-container']}>
-        
-          { isOpen ? <AiOutlineClose className={styles.icon} /> : <motion.GiHamburgerMenu animate={menuAnimation} className={styles.icon}/> }
-        
-        <ul className={ isOpen ? `${styles['nav-column']} ${styles['nav-list']}` : styles['nav-list']}>
+      <motion.nav animate={animation} className={styles["nav-container"]}>
+        <ul
+          className={
+            isOpen
+              ? `${styles["nav-column"]} ${styles["nav-list"]}`
+              : styles["nav-list"]
+          }
+        >
           {Links.map((link) => (
-            <li className={ isOpen ? `${styles['nav-column__item']} ${styles['nav-list__item']}` : styles['nav-list__item'] } onClick={()=> setOpen(false)} key={link.id}>
+            <li
+              className={
+                isOpen
+                  ? `${styles["nav-column__item"]} ${styles["nav-list__item"]}`
+                  : styles["nav-list__item"]
+              }
+              onClick={() => setOpen(false)}
+              key={link.id}
+            >
               <NavLink to={link.path}>{link.text}</NavLink>
             </li>
           ))}
         </ul>
-      </nav>
-    </motion.header>
+      </motion.nav>
+      <div>
+        {isOpen ? (
+          <AiOutlineClose
+            className={styles.icon}
+            onClick={() => setOpen(!isOpen)}
+          />
+        ) : (
+          <motion.div animate={menuAnimation}>
+            <GiHamburgerMenu
+              className={styles.icon}
+              onClick={() => setOpen(!isOpen)}
+            />
+          </motion.div>
+        )}
+      </div>
+    </header>
   );
 };
 
