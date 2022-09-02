@@ -32,16 +32,16 @@ const NavBar = () => {
     },
   ];
   return (
-    <header>
-      <div className={styles['header-container']}>
-        <div className={styles['logo-container']}>
+    <header className={styles.header}>
+      <div className={styles['logo-container']}>
+        <div className={styles['logo-container__icon']}>
           <NavLink to="/"><img src={logo} className={styles.logo} alt="STH logo" /></NavLink>
         </div>
       </div>
-      <nav>
-        <ul>
+      <nav className={styles['nav-container']}>
+        <ul className={styles['nav-list']}>
           {Links.map((link) => (
-            <li key={link.id}>
+            <li className={styles['nav-list__item']} key={link.id}>
               <NavLink to={link.path}>{link.text}</NavLink>
             </li>
           ))}
