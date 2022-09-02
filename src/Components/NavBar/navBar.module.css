@@ -1,10 +1,38 @@
 .header {
   display: flex;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 11;
   justify-content: space-between;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   border-bottom: 1px solid rgb(146, 146, 146);
   background-color: transparent;
   color: var(--font-color-1);
+}
+
+.open {
+  flex-flow: column;
+  height: 100vh;
+  background: black;
+  align-items: center;
+  justify-content: space-evenly;
+  overflow: hidden;
+}
+
+.nav-column {
+  gap: .7rem;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon {
+  position: absolute;
+  font-size: 3.5rem;
+  right: 2rem;
+  top: 2rem;
+  cursor: pointer;
 }
 
 .logo-container {
@@ -36,15 +64,12 @@
   margin-right: 20px;
 }
 
+
 .nav-list__item {
   font-weight: bold;
   margin-right: 10px;
 }
 
-.nav-list__item:last-child {
-  padding-left: 4px;
-  border-left: 1px solid rgb(124, 124, 124);
-}
 
 .nav-list__item a {
   text-decoration: none;
