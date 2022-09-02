@@ -21,7 +21,7 @@
 }
 
 .nav-column {
-  gap: .7rem;
+  gap: 0.7rem;
   flex-flow: column;
   justify-content: center;
   align-items: center;
@@ -65,15 +65,12 @@
   margin-right: 20px;
 }
 
-
 .nav-list__item {
   font-weight: bold;
   margin-right: 10px;
 }
 
-
 .nav-list__item a {
   text-decoration: none;
   color: rgb(148, 148, 148);
 }
-

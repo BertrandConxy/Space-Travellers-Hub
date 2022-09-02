@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import { GiHamburgerMenu } from "react-icons/gi";
-import { AiOutlineClose } from "react-icons/ai";
-import { motion } from "framer-motion";
-import { useAnimation } from "framer-motion";
+import { GiHamburgerMenu } from 'react-icons/gi';
+import { AiOutlineClose } from 'react-icons/ai';
+import { motion, useAnimation } from 'framer-motion';
 import { NavLink } from 'react-router-dom';
 import logo from '../../assets/planet.png';
 import styles from './navBar.module.css';
@@ -10,56 +9,56 @@ import styles from './navBar.module.css';
 const NavBar = () => {
   const [offsetY, setOffsetY] = useState(0);
   const [isOpen, setOpen] = useState(false);
-    const handleScroll = () => {
-      setOffsetY(window.scrollY);
-    };
-    const animation = useAnimation();
-    const menuAnimation = useAnimation();
-    useEffect(() => {
-      window.addEventListener("scroll", handleScroll);
-     if (offsetY > 0) {
-        animation.start({
-          x: '30vw',
-          transition: {
-            type: 'spring',
-            duration: 0.4,
-          },
-        });
-
-        menuAnimation.start({
-          x: 0,
-          position: 'fixed',
-          transition: {
-            type: 'spring',
-            stiffness: 100,
-            duration: 0.4,
-          },
-        });
-      }
-
-      if (offsetY === 0) {
-        animation.start({
-          x: 0,
-          transition: {
-            type: 'spring',
-            stiffness: 100,
-            duration: 0.4,
+  const handleScroll = () => {
+    setOffsetY(window.scrollY);
+  };
+  const animation = useAnimation();
+  const menuAnimation = useAnimation();
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    if (offsetY > 0) {
+      animation.start({
+        x: '30vw',
+        transition: {
+          type: 'spring',
+          duration: 0.4,
         },
       });
 
-        menuAnimation.start({
-          x: '30vw',
-          transition: {
-            type: 'spring',
-            duration: 0.4,
+      menuAnimation.start({
+        x: 0,
+        position: 'fixed',
+        transition: {
+          type: 'spring',
+          stiffness: 100,
+          duration: 0.4,
         },
       });
     }
-    
+
+    if (offsetY === 0) {
+      animation.start({
+        x: 0,
+        transition: {
+          type: 'spring',
+          stiffness: 100,
+          duration: 0.4,
+        },
+      });
+
+      menuAnimation.start({
+        x: '30vw',
+        transition: {
+          type: 'spring',
+          duration: 0.4,
+        },
+      });
+    }
+
     return () => {
-      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener('scroll', handleScroll);
     };
-  }, [offsetY])
+  }, [offsetY]);
 
   const Links = [
     {
@@ -92,32 +91,33 @@ const NavBar = () => {
     <header
       className={isOpen ? `${styles.open} ${styles.header}` : styles.header}
     >
-      <div className={styles["logo-container"]}>
-        <div className={styles["logo-container__icon"]}>
+      <div className={styles['logo-container']}>
+        <div className={styles['logo-container__icon']}>
           <NavLink to="/">
             <img src={logo} className={styles.logo} alt="STH logo" />
           </NavLink>
         </div>
       </div>
-      <motion.nav animate={animation} className={styles["nav-container"]}>
+      <motion.nav animate={animation} className={styles['nav-container']}>
         <ul
           className={
             isOpen
-              ? `${styles["nav-column"]} ${styles["nav-list"]}`
-              : styles["nav-list"]
+              ? `${styles['nav-column']} ${styles['nav-list']}`
+              : styles['nav-list']
           }
         >
           {Links.map((link) => (
             <li
               className={
                 isOpen
-                  ? `${styles["nav-column__item"]} ${styles["nav-list__item"]}`
-                  : styles["nav-list__item"]
+                  ? `${styles['nav-column__item']} ${styles['nav-list__item']}`
+                  : styles['nav-list__item']
               }
-              onClick={() => setOpen(false)}
               key={link.id}
             >
-              <NavLink to={link.path}>{link.text}</NavLink>
+              <NavLink onClick={() => setOpen(false)} to={link.path}>
+                {link.text}
+              </NavLink>
             </li>
           ))}
         </ul>
