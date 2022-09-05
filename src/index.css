@@ -97,11 +97,10 @@ body {
   box-shadow: 0 0 1rem var(--font-color-1);
 }
 
-/* .active {
-  text-decoration: underline;
-  color: rgb(218, 225, 226);
-  background-color: aqua;
-} */
+.active {
+  position: relative;
+  text-shadow: 0.09rem -0.09rem 0.8rem var(--font-color-1);
+}
 
 /* .active {
   text-decoration: underline;
