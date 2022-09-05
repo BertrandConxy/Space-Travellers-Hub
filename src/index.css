@@ -43,6 +43,7 @@ body {
   font-family: "Voyager-Regular", sans-serif;
   color: var(--font-color-1);
   font-size: 1.4rem;
+  background-color: var(--color-bg-main);
 }
 
 .u-mt-small {
@@ -70,6 +71,7 @@ body {
   padding: 1.5rem 3rem;
   display: inline-block;
   position: relative;
+  background-color: transparent;
   color: var(--font-color-2);
 }
 
@@ -97,11 +99,11 @@ body {
   box-shadow: 0 0 1rem var(--font-color-1);
 }
 
-/* .active {
-  text-decoration: underline;
-  color: rgb(218, 225, 226);
-  background-color: aqua;
-} */
+.active {
+  position: relative;
+  text-shadow: 0.09rem -0.09rem 0.8rem var(--font-color-1);
+  font-size: 1.9rem;
+}
 
 /* .active {
   text-decoration: underline;

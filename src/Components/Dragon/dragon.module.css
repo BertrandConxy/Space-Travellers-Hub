@@ -1,54 +1,31 @@
 .dragon-list {
   list-style-type: none;
   margin: 1.4rem;
+  padding-top: 5rem;
 }
 
-.dragon-item h3 {
-  margin-bottom: 0.5rem;
-}
-
-.dragon-item {
+.dragon-card {
   display: flex;
   gap: 3rem;
   margin-bottom: 2rem;
 }
 
-.dragon-item .item-img-container {
-  width: 240px;
-  height: 176px;
+.dragon-card__image {
+  width: 24rem;
+  height: 17.6rem;
 }
 
-.dragon-item img {
+.dragon-card__image img {
   display: block;
   width: 100%;
   height: 100%;
 }
 
-.dragon-item button {
-  padding: 8px 10px;
-  text-align: center;
-  font-size: 14px;
-  cursor: pointer;
-  border-radius: 4px;
-}
-
-.reserve-btn {
-  border: 1px solid #1782fc;
-  background-color: #1083fd;
-  color: #fff;
-}
-
-.cancel-btn {
-  background: white;
-  color: black;
-  border: 1px solid rgb(173, 96, 173);
-}
-
 .badge {
-  color: white;
-  background: #1083fd;
-  border-radius: 2px;
-  width: 50%;
-  text-align: center;
-  margin-bottom: 0.5rem;
+  background: var(--color-primary);
+  color: var(--font-color-1);
+  border-radius: 4px;
+  padding: 0.5rem;
+  display: block;
+  max-width: 10rem;
 }
