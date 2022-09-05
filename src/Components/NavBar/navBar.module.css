@@ -36,6 +36,17 @@
   top: 2rem;
   cursor: pointer;
   color: var(--font-color-2);
+  transition: all .4s;
+}
+
+.icon:hover {
+  color: var(--font-color-1);
+  transform: translateY(-0.4rem) scale(1.03);
+  backface-visibility: hidden;
+}
+
+.icon:active {
+  transform: translateY(0) scale(1);
 }
 
 .logo-container {

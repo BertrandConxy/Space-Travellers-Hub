@@ -6,50 +6,35 @@
   box-sizing: border-box;
 }
 
+.rocketList {
+  padding-top: 5rem;
+}
+
 .rocket-card {
   display: flex;
   width: 96%;
-  padding: 16px 14px;
+  padding: 1.6rem 1.4rem;
 }
 
-.rock-img {
+.rocket-card__image {
   width: 15rem;
   height: 11rem;
 }
 
-.title-desc {
+.rocket-card__content {
   margin-left: 5%;
 }
 
-.parag {
+.rocket-card__content--paragraph {
   width: 90%;
-  line-height: 20.8px;
-  margin-top: 10px;
+  line-height: 2rem;
+  margin-top: 1rem;
 }
 
-.rocket-btn {
-  background: #1083fd;
-  color: white;
-  padding: 8px;
+.badge {
+  background: var(--color-primary);
+  color: var(--font-color-1);
   border-radius: 4px;
-  border: 1px solid #1782fc;
-  cursor: pointer;
-  margin-top: 15px;
-}
-
-.cancel-reserve {
-  background: white;
-  color: rgb(131, 131, 131);
-  padding: 8px;
-  border-radius: 4px;
-  border: 1px solid rgb(7, 7, 7);
-  cursor: pointer;
-  margin-top: 15px;
-}
-
-.mini-btn {
-  background: #1083fd;
-  color: white;
-  border-radius: 4px;
+  padding: 0.5rem;
   margin-right: 5px;
 }

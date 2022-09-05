@@ -43,6 +43,7 @@ body {
   font-family: "Voyager-Regular", sans-serif;
   color: var(--font-color-1);
   font-size: 1.4rem;
+  background-color: var(--color-bg-main);
 }
 
 .u-mt-small {
@@ -70,6 +71,7 @@ body {
   padding: 1.5rem 3rem;
   display: inline-block;
   position: relative;
+  background-color: transparent;
   color: var(--font-color-2);
 }
 
@@ -100,6 +102,7 @@ body {
 .active {
   position: relative;
   text-shadow: 0.09rem -0.09rem 0.8rem var(--font-color-1);
+  font-size: 1.9rem;
 }
 
 /* .active {

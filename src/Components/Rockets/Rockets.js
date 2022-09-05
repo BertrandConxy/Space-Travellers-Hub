@@ -30,13 +30,13 @@ const Rockets = () => {
     <div className={styles.rocketList}>
       {rocketsinfo.map((rocket) => (
         <div key={rocket.rocket_id} className={styles['rocket-card']}>
-          <div className={styles['rocket-image']}>
-            <img className={styles['rock-img']} src={rocket.rocket_img} alt={rocket.rocket_name} />
+          <div>
+            <img className={styles['rocket-card__image']} src={rocket.rocket_img} alt={rocket.rocket_name} />
           </div>
-          <div className={styles['title-desc']}>
+          <div className={styles['rocket-card__content']}>
             <h2>{rocket.rocket_name}</h2>
-            <p className={styles.parag}>
-              {rocket.reserved ? (<span className={styles['mini-btn']}>Reserved</span>) : (false)}
+            <p className={styles['rocket-card__content--paragraph']}>
+              {rocket.reserved ? (<span className={styles.badge}>Reserved</span>) : (false)}
               {rocket.rocket_description}
             </p>
 
@@ -44,7 +44,7 @@ const Rockets = () => {
               <button
                 onClick={() => cancelBooking(rocket.rocket_id)}
                 type="button"
-                className={styles['cancel-reserve']}
+                className="btn btn-1"
               >
                 Cancel Reservation
               </button>
@@ -52,7 +52,7 @@ const Rockets = () => {
               <button
                 onClick={() => rocketBooking(rocket.rocket_id)}
                 type="button"
-                className={styles['rocket-btn']}
+                className="btn btn-1"
               >
                 Reserve Rocket
               </button>
