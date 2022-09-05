@@ -5,7 +5,7 @@
   width: 100%;
   z-index: 11;
   justify-content: space-between;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: '';
   border-bottom: 1px solid rgb(146, 146, 146);
   background-color: transparent;
   color: var(--font-color-1);
@@ -13,8 +13,10 @@
 
 .open {
   flex-flow: column;
+  position: fixed;
   height: 100vh;
-  background: black;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(10px);
   align-items: center;
   justify-content: space-evenly;
   overflow: hidden;
@@ -33,7 +35,7 @@
   right: 2rem;
   top: 2rem;
   cursor: pointer;
-  color: green;
+  color: var(--font-color-2);
 }
 
 .logo-container {

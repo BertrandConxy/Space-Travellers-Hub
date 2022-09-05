@@ -18,7 +18,7 @@ const NavBar = () => {
     window.addEventListener('scroll', handleScroll);
     if (offsetY > 0) {
       animation.start({
-        x: '30vw',
+        x: `${isOpen ? 0 : '100vw'}`,
         transition: {
           type: 'spring',
           duration: 0.4,
@@ -58,7 +58,7 @@ const NavBar = () => {
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
-  }, [offsetY]);
+  }, [offsetY, isOpen]);
 
   const Links = [
     {
