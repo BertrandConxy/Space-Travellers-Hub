@@ -1,19 +1,19 @@
 .container {
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .container__content {
-    font-family: 'Polaris', sans-serif;
-    font-size: 4rem;
-    color: var(--font-color-2);
+  font-family: 'Polaris', sans-serif;
+  font-size: 4rem;
+  color: var(--font-color-2);
 }
 
 @media screen and (max-width: 768px) {
-    .container__content {
-        font-size: 2rem;
-    }
+  .container__content {
+    font-size: 2rem;
+  }
 }
