@@ -2,13 +2,14 @@
   display: flex;
   position: absolute;
   top: 0;
-  width: 100%;
   z-index: 11;
+  width: 100vw;
   justify-content: space-between;
   font-family: 'Voyager-Bold', sans-serif;
   border-bottom: 1px solid var(--font-color-2);
   background-color: transparent;
   font-size: 1.7rem;
+  overflow: hidden;
 }
 
 .open {
