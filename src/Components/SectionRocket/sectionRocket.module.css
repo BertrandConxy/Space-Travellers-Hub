@@ -66,3 +66,22 @@
   top: 5rem;
   left: 6rem;
 }
+
+@media (max-width: 768px) {
+  .row {
+    flex-flow: column-reverse;
+    justify-content: space-around;
+  }
+
+  .rocket-section__text {
+    max-width: 100%;
+  }
+
+  .rocket-section__image {
+    max-width: 100%;
+  }
+
+  .section-gallery__image {
+    width: 75%;
+  }
+}

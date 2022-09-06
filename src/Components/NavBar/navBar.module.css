@@ -69,6 +69,7 @@
 }
 
 .nav-container {
+  position: relative;
   display: flex;
   align-items: center;
 }
@@ -99,8 +100,3 @@
   text-shadow: 0.09rem -0.09rem 0.8rem var(--font-color-1);
 }
 
-@media (max-width: 768px) {
-  .nav-container {
-    display: none;
-  }
-}

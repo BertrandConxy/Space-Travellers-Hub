@@ -105,3 +105,9 @@ body {
   text-shadow: 0.09rem -0.09rem 0.8rem var(--font-color-1);
   font-size: 1.9rem;
 }
+
+@media (max-width: 768px) {
+  body {
+    font-size: 1rem;
+  }
+}
