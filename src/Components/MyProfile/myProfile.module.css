@@ -1,7 +1,6 @@
 .profile {
   display: flex;
-  margin: 2rem;
-  font-family: "Poppins", sans-serif;
+  margin: 5rem 1rem 0 1rem
 }
 
 .box {
@@ -18,9 +17,14 @@
 }
 
 .profile .title-entry {
-  border: 1px solid #e8e8e8;
-  padding: 25px 35px;
+  border: 1px solid var(--font-color-2);
+  padding: 2.5rem 3.5rem;
   font-size: 1.3rem;
-  font-family: "Poppins", sans-serif;
-  letter-spacing: 1px;
+}
+
+.profile .alert {
+  border: 1px solid var(--font-color-2);
+  padding: 2.5rem 3.5rem;
+  font-size: 1.3rem;
+  color: var(--font-color-2);
 }

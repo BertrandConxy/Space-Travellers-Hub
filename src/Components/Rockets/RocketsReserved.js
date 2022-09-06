@@ -9,14 +9,20 @@ const RocketsReserved = () => {
 
   return (
     <div className={styles.box}>
-      <h2>My Reserved Rockets</h2>
+      <h2>Reserved Rockets</h2>
       <table className={styles['Mission-ProfileTable']}>
         <tbody>
-          {reservedRockets.map((rocket) => (
-            <tr key={rocket.rocket_id}>
-              <td className={styles['title-entry']}>{rocket.rocket_name}</td>
+          {reservedRockets.length === 0 ? (
+            <tr>
+              <td className={styles.alert}>No Reserved Rockets</td>
             </tr>
-          ))}
+          ) : (
+            reservedRockets.map((rocket) => (
+              <tr key={rocket.rocket_id}>
+                <td className={styles['title-entry']}>{rocket.rocket_name}</td>
+              </tr>
+            ))
+          )}
         </tbody>
       </table>
     </div>

@@ -67,6 +67,7 @@ body {
 .btn:link,
 .btn:visited {
   text-decoration: none;
+  font-family: 'Voyager-Bold', sans-serif;
   padding: 1.5rem 3rem;
   cursor: pointer;
   display: inline-block;
@@ -104,24 +105,3 @@ body {
   text-shadow: 0.09rem -0.09rem 0.8rem var(--font-color-1);
   font-size: 1.9rem;
 }
-
-/* .active {
-  text-decoration: underline;
-} */
-
-/* .missions-header {
-  border-bottom: 1px solid #ddd;
-  padding-left: 10px;
-}
-
-.missions-container {
-  margin-top: 2rem;
-  border: 1px solid #ddd;
-  width: 20vw;
-}
-
-.missions-list {
-  list-style-type: none;
-  padding-left: 10px;
-  font-size: 18px;
-} */

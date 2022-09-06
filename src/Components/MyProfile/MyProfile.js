@@ -9,33 +9,48 @@ const MyProfile = () => {
     (missions) => missions.reserved === true,
   );
 
-  const reservedDragons = allDragons.filter((dragons) => !dragons.reserved !== true);
+  const reservedDragons = allDragons.filter(
+    (dragons) => !dragons.reserved !== true,
+  );
 
   return (
     <div className={styles.profile}>
-
       <RocketsReserved />
       <div className={styles.box}>
-        <h2 className="title">My Missions</h2>
+        <h2 className="title">Reserved Missions</h2>
         <table className={styles['Mission-ProfileTable']}>
           <tbody>
-            {joinedMissions.map((mission) => (
-              <tr key={mission.mission_id}>
-                <td className={styles['title-entry']}>{mission.mission_name}</td>
+            {joinedMissions.length === 0 ? (
+              <tr>
+                <td className={styles.alert}>No Reserved Mission</td>
               </tr>
-            ))}
+            ) : (
+              joinedMissions.map((mission) => (
+                <tr key={mission.mission_id}>
+                  <td className={styles['title-entry']}>
+                    {mission.mission_name}
+                  </td>
+                </tr>
+              ))
+            )}
           </tbody>
         </table>
       </div>
       <div className={styles.box}>
-        <h2 className="title">My Dragons</h2>
+        <h2 className="title">Reserved Dragons</h2>
         <table className="Mission-ProfileTable">
           <tbody>
-            {reservedDragons.map((dragon) => (
-              <tr key={dragon.id}>
-                <td className={styles['title-entry']}>{dragon.name}</td>
+            {reservedDragons.length === 0 ? (
+              <tr>
+                <td className={styles.alert}>No Reserved Dragons</td>
               </tr>
-            ))}
+            ) : (
+              reservedDragons.map((dragon) => (
+                <tr key={dragon.id}>
+                  <td className={styles['title-entry']}>{dragon.name}</td>
+                </tr>
+              ))
+            )}
           </tbody>
         </table>
       </div>
