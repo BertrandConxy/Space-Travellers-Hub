@@ -6,10 +6,10 @@ The Space travelers hub is a web app that allows adventurers to make custom rese
 
 ## App Screenshot
 
-![Space Travel hub](https://user-images.githubusercontent.com/71140133/157690607-cb0c3817-8107-431a-b06c-aec689871904.PNG)
+![Space-craft-hub](https://user-images.githubusercontent.com/90222110/188908950-e10ed5e7-731a-4f4b-8782-c4fc0a830742.png)
 
 ## Demo
-[View website](https://spacecrafthub.netlify.app/)
+[View website](https://space-traveli.netlify.app/)
 
 ## Built With
 - ReactJS
