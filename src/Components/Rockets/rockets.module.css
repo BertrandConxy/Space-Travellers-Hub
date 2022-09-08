@@ -33,7 +33,7 @@
   margin-right: 5px;
 }
 
-@media  (max-width: 768px){
+@media (max-width: 768px) {
   .rocket-card {
     width: 100%;
   }

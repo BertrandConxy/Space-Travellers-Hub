@@ -11,12 +11,12 @@ th {
   padding: 0.5rem;
 }
 
-.missionReserved, .notReserved {
+.missionReserved,
+.notReserved {
   word-spacing: -2px;
   text-align: center;
   color: var(--font-color-1);
   padding: 1rem;
-  
 }
 
 .missionReserved {
@@ -27,7 +27,8 @@ th {
   background-color: var(--color-bg-secondary);
 }
 
-.leave, .join {
+.leave,
+.join {
   border: 1px solid;
   border-radius: 2rem;
   cursor: pointer;
@@ -54,19 +55,20 @@ th {
 
 @media (max-width: 768px) {
   .table {
-    font-size: 0.9rem;  
+    font-size: 0.9rem;
   }
 
   .badge {
     width: 10%;
   }
 
-  .missionReserved, .notReserved {
+  .missionReserved,
+  .notReserved {
     padding: 0.6rem;
   }
 
-  .leave, .join {
+  .leave,
+  .join {
     padding: 0.5rem 1rem;
   }
-
 }

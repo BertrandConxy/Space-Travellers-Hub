@@ -17,7 +17,7 @@ const UseNav = (offSet, isOpen, handleScroll) => {
       });
 
       menuAnimation.start({
-        x: 0,
+        x: '-5%',
         top: '2%',
         position: 'fixed',
         transition: {
