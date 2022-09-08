@@ -14,7 +14,6 @@ const NavBar = () => {
     setOffsetY(window.scrollY);
   };
   const { scrollAnimation, menuAnimation } = UseNav(offsetY, isOpen, handleScroll);
-
   const Links = [
     {
       id: 1,

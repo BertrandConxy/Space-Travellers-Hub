@@ -2,6 +2,7 @@ import { useEffect } from 'react';
 import { useAnimation } from 'framer-motion';
 
 const UseNav = (offSet, isOpen, handleScroll) => {
+  const IsMobile = (window.innerWidth <= 768);
   const scrollAnimation = useAnimation();
   const menuAnimation = useAnimation();
   useEffect(() => {
@@ -16,7 +17,7 @@ const UseNav = (offSet, isOpen, handleScroll) => {
       });
 
       menuAnimation.start({
-        x: 0,
+        x: '-10vw',
         position: 'fixed',
         transition: {
           type: 'spring',
@@ -28,7 +29,7 @@ const UseNav = (offSet, isOpen, handleScroll) => {
 
     if (offSet === 0) {
       scrollAnimation.start({
-        x: 0,
+        x: `${IsMobile ? '100vw' : 0}`,
         transition: {
           type: 'spring',
           stiffness: 100,
@@ -51,5 +52,4 @@ const UseNav = (offSet, isOpen, handleScroll) => {
 
   return { scrollAnimation, menuAnimation };
 };
-
 export default UseNav;
