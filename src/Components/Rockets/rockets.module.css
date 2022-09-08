@@ -1,11 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 .rocketList {
   padding-top: 5rem;
 }
@@ -37,4 +31,15 @@
   border-radius: 4px;
   padding: 0.5rem;
   margin-right: 5px;
+}
+
+@media  (max-width: 768px){
+  .rocket-card {
+    width: 100%;
+  }
+
+  .rocket-card__content--paragraph {
+    width: 100%;
+    line-height: 1.5rem;
+  }
 }
