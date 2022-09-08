@@ -1,7 +1,8 @@
 .profile {
   display: flex;
-  height: 100%;
-  margin: 5rem 1rem 0 1rem;
+  height: 120vh;
+  margin: 1rem 1rem 0 1rem;
+  padding: 5rem;
 }
 
 .box {
@@ -35,5 +36,6 @@
     flex-flow: column;
     justify-content: space-evenly;
     align-items: center;
+    width: 100%;
   }
 }

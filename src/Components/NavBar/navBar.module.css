@@ -33,7 +33,7 @@
 .icon {
   position: fixed;
   font-size: 3.5rem;
-  right: 2%;
+  right: 3%;
   top: 2%;
   cursor: pointer;
   color: var(--font-color-2);

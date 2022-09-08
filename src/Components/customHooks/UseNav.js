@@ -17,11 +17,12 @@ const UseNav = (offSet, isOpen, handleScroll) => {
       });
 
       menuAnimation.start({
-        x: '-10vw',
+        x: 0,
+        top: '2%',
         position: 'fixed',
         transition: {
           type: 'spring',
-          stiffness: 100,
+          stiffness: 120,
           duration: 0.4,
         },
       });
