@@ -13,8 +13,8 @@ const SectionRocket = () => {
   const animation = UseAnimate(inView);
 
   return (
-    <section ref={ref} className={styles['rocket-section']}>
-      <div className="u-heading">
+    <section className={styles['rocket-section']}>
+      <div ref={ref} className="u-heading">
         <h2>Travel tours by Rockets</h2>
       </div>
       <motion.div animate={animation} className={styles.row}>
