@@ -1,7 +1,7 @@
 .table {
   margin: 5rem 0;
   border-collapse: collapse;
-  width: 100%;
+  width: 100vw;
 }
 
 td,
@@ -11,45 +11,62 @@ th {
   padding: 0.5rem;
 }
 
+.missionReserved, .notReserved {
+  word-spacing: -2px;
+  text-align: center;
+  color: var(--font-color-1);
+  padding: 1rem;
+  
+}
 
 .missionReserved {
-  text-align: center;
-  word-spacing: -2px;
-  color: var(--font-color-1);
   background-color: var(--color-primary);
-  padding: 1rem;
 }
 
 .notReserved {
-  padding: 1rem;
-  text-align: center;
-  word-spacing: -2px;
-  color: var(--font-color-1);
   background-color: var(--color-bg-secondary);
 }
 
-.leave {
-  border: 1px solid var(--font-color-1);
-  text-shadow: 0.1rem 0.1rem 1.4rem var(--font-color-1);
-  box-shadow: 0.1rem 0.1rem 1.6rem var(--font-color-1);
+.leave, .join {
+  border: 1px solid;
   border-radius: 2rem;
   cursor: pointer;
-  background-color: transparent;
-  color: var(--font-color-1);
-  padding: 1rem 1.5rem;
   font-family: 'Voyager-Bold', sans-serif;
+  background-color: transparent;
+  padding: 1rem 1.5rem;
+}
+
+.leave {
+  border-color: var(--font-color-1);
+  text-shadow: 0.1rem 0.1rem 1.4rem var(--font-color-1);
+  box-shadow: 0.1rem 0.1rem 1.6rem var(--font-color-1);
+  color: var(--font-color-1);
 }
 
 .join {
-  border: 1px solid var(--font-color-2);
-  border-radius: 2rem;
-  padding: 1rem 1.5rem;
-  background-color: transparent;
+  border-color: var(--font-color-2);
   color: var(--font-color-2);
-  font-family: 'Voyager-Bold', sans-serif;
-  cursor: pointer;
 }
 
 .badge {
   width: 14%;
+}
+
+@media (max-width: 768px) {
+  .table {
+    font-size: 0.9rem;  
+  }
+
+  .badge {
+    width: 10%;
+  }
+
+  .missionReserved, .notReserved {
+    padding: 0.6rem;
+  }
+
+  .leave, .join {
+    padding: 0.5rem 1rem;
+  }
+
 }
