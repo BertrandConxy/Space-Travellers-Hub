@@ -42,3 +42,19 @@
   left: 50%;
   transform: translateX(-50%);
 }
+
+@media (max-width: 768px) {
+  .company {
+    flex-flow: column-reverse;
+    justify-content: space-between;
+    margin: 0.8rem 0 3rem 0;
+  }
+
+  .company__sponsors {
+    margin-top: 1.5rem;
+  }
+
+  .company__sponsors > span {
+    font-size: 1.5rem;
+  }
+}

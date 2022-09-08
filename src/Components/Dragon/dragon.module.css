@@ -1,7 +1,8 @@
 .dragon-list {
   list-style-type: none;
-  margin: 1.4rem;
+  margin: 4rem 1.5rem;
   padding-top: 5rem;
+  height: 120vh;
 }
 
 .dragon-card {
@@ -11,8 +12,8 @@
 }
 
 .dragon-card__image {
-  width: 24rem;
-  height: 17.6rem;
+  width: 15rem;
+  height: 11rem;
 }
 
 .dragon-card__image img {

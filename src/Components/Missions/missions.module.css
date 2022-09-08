@@ -1,64 +1,74 @@
 .table {
-  margin: 2rem 0;
+  margin: 5rem 0;
   border-collapse: collapse;
-  width: 100%;
-  font-size: 15px;
+  width: 100vw;
 }
 
 td,
 th {
   border: 1px solid #ddd;
   text-align: left;
-  padding: 5px;
+  padding: 0.5rem;
 }
 
-th,
-.missionName {
-  font-weight: bold;
-}
-
-tr:nth-child(even) {
-  background-color: #f5f4f4;
+.missionReserved,
+.notReserved {
+  word-spacing: -2px;
+  text-align: center;
+  color: var(--font-color-1);
+  padding: 1rem;
 }
 
 .missionReserved {
-  text-align: center;
-  font-size: 14px;
-  word-spacing: -2px;
-  color: #fff;
-  font-weight: bold;
-  background-color: rgb(13, 99, 121);
-  padding: 5px;
+  background-color: var(--color-primary);
 }
 
 .notReserved {
-  padding: 5px;
-  text-align: center;
-  font-size: 15px;
-  word-spacing: -2px;
-  color: #fff;
-  font-weight: bold;
-  background-color: rgb(56, 56, 56);
+  background-color: var(--color-bg-secondary);
+}
+
+.leave,
+.join {
+  border: 1px solid;
+  border-radius: 2rem;
+  cursor: pointer;
+  font-family: 'Voyager-Bold', sans-serif;
+  background-color: transparent;
+  padding: 1rem 1.5rem;
 }
 
 .leave {
-  border: 2px solid rgb(238, 68, 68);
-  background-color: transparent;
-  color: rgb(238, 68, 68);
-  font-size: 15px;
-  padding: 5px;
-  font-weight: bold;
+  border-color: var(--font-color-1);
+  text-shadow: 0.1rem 0.1rem 1.4rem var(--font-color-1);
+  box-shadow: 0.1rem 0.1rem 1.6rem var(--font-color-1);
+  color: var(--font-color-1);
 }
 
 .join {
-  border: 2px solid rgb(56, 56, 56);
-  background-color: transparent;
-  color: rgb(56, 56, 56);
-  font-size: 15px;
-  padding: 5px;
-  font-weight: bold;
+  border-color: var(--font-color-2);
+  color: var(--font-color-2);
 }
 
 .badge {
-  width: 10%;
+  width: 14%;
+}
+
+@media (max-width: 768px) {
+  .table {
+    font-size: 0.9rem;
+  }
+
+  .badge {
+    width: 10%;
+  }
+
+  .missionReserved,
+  .notReserved {
+    padding: 0.6rem;
+  }
+
+  .leave,
+  .join {
+    padding: 0.5rem 1rem;
+  }
 }
