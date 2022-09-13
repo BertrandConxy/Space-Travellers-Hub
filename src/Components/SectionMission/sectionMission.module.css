@@ -2,7 +2,7 @@
   background-color: var(--color-bg-main);
   transform: translateY(-1.5rem);
   padding: 5rem 2.5rem;
-  height: 90vh;
+  height: auto;
 }
 
 .content {
